@@ -1,0 +1,15 @@
+[project]
+name = "svg-to-eps-converter"
+version = "0.1.0"
+description = "矢量SVG到矢量EPS转换工具"
+requires-python = ">=3.8"
+
+dependencies = [
+    "cairosvg",  # 可选，提供纯Python方案
+]
+
+[project.scripts]
+svg2eps = "SVG2EPS:main"  # 命令行工具入口
+
+[tool.uv]
+dev-dependencies = []
